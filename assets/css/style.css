@@ -69,6 +69,10 @@ h1 {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7C756B;
+    text-decoration: none;
 }
 
 #menu>li {
@@ -117,7 +121,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/D630ECE4-C40F-4838-B40B-33C60CF939D6.webp") no-repeat center center/cover;
+    background: url("../images/hero-image\ .webp") no-repeat center center/cover;
 }
    
 /* Footer*/
