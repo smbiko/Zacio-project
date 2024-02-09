@@ -5,49 +5,61 @@
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
 }
 
 /* General styles */
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
-    font-family: 'Source Sans 3', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #3a3a3a;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #212121;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #212121;
 }
 
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+
+}
 
 /* Header */
 header {
-    background-color: #212121;
-    padding: 0 0.5rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #212121;
+  padding: 0 0.5rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 
@@ -56,13 +68,13 @@ header a {
 
 
 .logo {
-    cursor: pointer;
-    margin-right: 0;
-    width: 50%;
-    max-width: 200px;
-    max-height: 90px;
-    min-height: 25px;
-    min-width: 95px;
+  cursor: pointer;
+  margin-right: 0;
+  width: 50%;
+  max-width: 200px;
+  max-height: 90px;
+  min-height: 25px;
+  min-width: 95px;
 }
 
 
@@ -70,268 +82,335 @@ header a {
 
 /* Menu */
 #menu {
-    font-size: 110%;
-    letter-spacing: 1.5px;
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 16px;
-    color: #7C756B;
-    text-decoration: none;
+  font-size: 110%;
+  letter-spacing: 1.5px;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7C756B;
+  text-decoration: none;
 }
 
 #menu>li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
-    background-color: #212121;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
+  position: absolute;
+  background-color: #212121;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
 }
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
-    display: block;
+  display: block;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 
 /* Main Content */
 main {
-
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 47px;
+  /* Add margin at the top to prevent content from being covered by the header */
+  margin-top: 47px;
 
 }
+
+
 
 /* Hero section */
 #hero {
-    height: 600px;
-    width: 100%;
-    background: url("../images/hero-image\ .webp") no-repeat center center/cover;
-    position: relative;
+  height: 600px;
+  width: 100%;
+  background: url("../images/hero-image\ .webp") no-repeat center center/cover;
+  position: relative;
 }
 
 #cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent */
-    background-color: rgba(145, 145, 145, .7) font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
+  /* Final rgba value sets the opacity so it is semi-transparent */
+  background-color: rgba(63, 61, 61, .7);
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 20px;
 }
 
 #cover-text>h2,
 #cover-text>h3 {
-    color: #E1E2E4;
+  color: #E1E2E4;
 }
 
 /* Reasons section */
 #aboutUs {
-    width: 90%;
-    margin: 20px auto;
+  width: 90%;
+  margin: 20px auto;
 }
 
 #aboutUs h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 180%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 180%;
 }
+
 #aboutUs p {
-    text-align: center;
-    font-size: 100%;
-  
+  text-align: center;
+  font-size: 100%;
+
 }
 
 
 /* Portfolio Section   */
 
 #portfolio-section {
-    width: 90%;
-    margin: 20px auto;
+  width: 90%;
+  margin: 20px auto;
+
 }
 
 .heading-1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 180%;
-  }
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 180%;
+}
 
-  p {
-    text-align: center;
-    font-size: 100%;
-    
-  }
+p {
+  text-align: center;
+  font-size: 100%;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
 
 #portfolio-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding-block: 100px;
-  }
-  
-  .portfolio-cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .portfolio-card {
-    background: #E1D6CC;
-    border-radius: 10px;
-    max-width: 200px;
-    height: 520px;
-    overflow: hidden;
-  }
-  
-  .portfolio-card-header {
-    margin-bottom: 10px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-block: 100px;
+}
 
-  }
-  
-  .portfolio-card-title {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: -2px;
-  }
-  
-  .portfolio-card-subtitle {
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: -1px;
+.portfolio-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
 
-  }
-  
-  .portfolio-card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .portfolio-card-text {
-    padding: 20px;
-    text-align: center;
-  }
+.portfolio-card {
+  background: #E1D6CC;
+  border-radius: 10px;
+  max-width: 200px;
+  height: 520px;
+  overflow: hidden;
+}
+
+.portfolio-card-header {
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+.portfolio-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.portfolio-card-subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+}
+
+.portfolio-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-card-text {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Team Section */
+
+.heading-1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 180%;
+}
+
+.heading-2 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+
+
+#team-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-block: 100px;
+
+}
+#team-section hr {
+  width: 80%;
+
+
+}
+
+.team-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.team-member-card-header {
+  text-align: center;
+}
+
+
 
 
 /* Footer*/
 footer {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
 
 #social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #A06040;
+  font-size: 160%;
+  padding: 5%;
+  color: #A06040;
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
+  /* Header */
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
 
-    #menu {
-        display: flex;
-    }
+  #menu {
+    display: flex;
+  }
 
-    #menu>li {
-        padding-left: 1rem;
-    }
+  #menu>li {
+    padding-left: 1rem;
+  }
 
-    .nav-toggle-label {
-        display: none;
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
 
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-    }
+  /* Main content */
+  main {
+    /* Push main content down to accommodate larger header */
+    margin-top: 79px;
+  }
 
-    /* Hero image */
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
+  /* Hero image */
+  #cover-text {
+    width: 300px;
+    right: 50px;
+  }
 
-    /* Portfolio Section */
-        .portfolio-card {
-          display: flex;
-          align-items: center;
-          max-width: 100%;
-          height: 350px;
-        
-    
-      
-        .portfolio-card-img {
-          width: 60%;
-          height: 100%;
-        }
-      
-        .portfolio-card-header {
-          margin-bottom: 20px;
-          align-items: center;
+  /* Portfolio Section */
+  .portfolio-card {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 350px;
 
-        }
-      
-        .portfolio-card-text {
-          padding: 30px;
-          align-items: center;
-        }
-      }
+  }
+
+  .portfolio-card-reversed {
+    flex-direction: row-reverse;
+  }
+
+
+  .portfolio-card-img {
+    width: 60%;
+    height: 100%;
+  }
+
+  .portfolio-card-header {
+    margin-bottom: 20px;
+    align-items: center;
+
+  }
+
+  .portfolio-card-text {
+    padding: 30px;
+    align-items: center;
+  }
 }
+
+
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #212121;
-    }
+  #menu a:hover {
+    border-bottom: 1px solid #212121;
+  }
 
-    .portfolio-card-img {
-        width: 50%;
-      }
+  .portfolio-card-img {
+    width: 50%;
+  }
 }
