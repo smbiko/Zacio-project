@@ -146,6 +146,96 @@ main {
     color: #E1E2E4;
 }
 
+/* Reasons section */
+#aboutUs {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#aboutUs h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 180%;
+}
+#aboutUs p {
+    text-align: center;
+    font-size: 100%;
+  
+}
+
+
+/* Portfolio Section   */
+
+#portfolio-section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.heading-1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 180%;
+  }
+
+  p {
+    text-align: center;
+    font-size: 100%;
+    
+  }
+
+#portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-block: 100px;
+  }
+  
+  .portfolio-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .portfolio-card {
+    background: #E1D6CC;
+    border-radius: 10px;
+    max-width: 200px;
+    height: 520px;
+    overflow: hidden;
+  }
+  
+  .portfolio-card-header {
+    margin-bottom: 10px;
+    align-items: center;
+
+  }
+  
+  .portfolio-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -2px;
+  }
+  
+  .portfolio-card-subtitle {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+  }
+  
+  .portfolio-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .portfolio-card-text {
+    padding: 20px;
+    text-align: center;
+  }
+
 
 /* Footer*/
 footer {
@@ -207,6 +297,32 @@ footer {
         width: 300px;
         right: 50px;
     }
+
+    /* Portfolio Section */
+        .portfolio-card {
+          display: flex;
+          align-items: center;
+          max-width: 100%;
+          height: 350px;
+        
+    
+      
+        .portfolio-card-img {
+          width: 60%;
+          height: 100%;
+        }
+      
+        .portfolio-card-header {
+          margin-bottom: 20px;
+          align-items: center;
+
+        }
+      
+        .portfolio-card-text {
+          padding: 30px;
+          align-items: center;
+        }
+      }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -214,4 +330,8 @@ footer {
     #menu a:hover {
         border-bottom: 1px solid #212121;
     }
+
+    .portfolio-card-img {
+        width: 50%;
+      }
 }
