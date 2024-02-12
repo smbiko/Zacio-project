@@ -337,6 +337,14 @@ footer {
   color: #A06040;
 }
 
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
+      column-count: 2;
+      column-gap: 0;
+  }
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -408,6 +416,12 @@ footer {
     padding: 30px;
     align-items: center;
   }
+
+
+    /* Gallery */
+    #photos {
+      column-count: 3;
+  }
 }
 
 
@@ -421,4 +435,11 @@ footer {
   .portfolio-card-img {
     width: 50%;
   }
+   /* Gallery */
+   #photos {
+    column-count: 4;
 }
+}
+
+@media screen and (min-width: 1200px) {    
+  /* Reasons section */
