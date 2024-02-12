@@ -21,19 +21,19 @@
 <body>
   <!--Header-->
   <header>
-    <img class="logo"  href="index.html" src="assets/icons/zacio_logo_no_tag_gold-01.png" alt="Zacio Logo">
+    <img class="logo" href="index.html" src="assets/icons/zacio_logo_no_tag_gold-01.png" alt="Zacio Logo">
 
     <!-- Navigation -->
     <input type="checkbox" id="nav-toggle" name="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">
       <i class="fa-solid fa-bars"></i>
     </label>
-    
+
 
     <nav>
       <ul id="menu">
         <li>
-          <a href="index.html" >Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
           <a href="events.html">Events</a>
@@ -53,34 +53,38 @@
   <main>
     <section id="signup">
       <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
-          <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
-          <label for="first_name">First Name</label>
-          <input type="text" name="first_name" id="first_name" class="text-input" required>
-          <br>
-          <label for="last_name">Last Name</label>
-          <input type="text" name="last_name" id="last_name" class="text-input" required>
-          <br>
-          <label for="email_address">Email Address</label>
-          <input type="email" name="email_address" id="email_address" class="text-input" required>
-          <br>
-          <div class="radio-buttons">
-              <div>
-                  <label for="road">Road</label>
-                  <input type="radio" name="running_preference" id="road" value="road" required checked>
-              </div>
-              <div>
-                  <label for="trail">Trail</label>
-                  <input type="radio" name="running_preference" id="trail" value="trail" required>
-              </div>
-              <div>
-                  <label for="both">Both</label>
-                  <input type="radio" name="running_preference" id="both" value="both" required>
-              </div>
+        <h2><i class="fa-solid fa-file-signature"></i> Let's get you signed up!</h2>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" class="text-input" required>
+        <br>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" class="text-input" required>
+        <br>
+        <label for="email_address">Email Address</label>
+        <input type="email" name="email_address" id="email_address" class="text-input" required>
+        <br>
+        <div class="radio-buttons">
+          <div>
+            <label for="SoulfulSundays"> Soulful Sundays</label>
+            <input type="radio" name="event_preference" id="SoulfulSundays" value="SoulfulSundays" required checked>
           </div>
-          <button type="submit" class="join-button">Let's Run!</button>
+          <div>
+            <label for="SouledOutSaturdays">Souled Out Saturdays</label>
+            <input type="radio" name="event_preference" id="SouledOutSaturdays" value="SouledOutSaturdays" required>
+          </div>
+          <div>
+            <label for="SuitUp">Suit Up</label>
+            <input type="radio" name="event_preference" id="SouledOutSaturdays" value="SouledOutSaturdays" required>
+          </div>
+          <div>
+            <label for="All">All</label>
+            <input type="radio" name="event_preference" id="both" value="both" required>
+          </div>
+        </div>
+        <button type="submit" class="join-button">Lets Vibe!</button>
       </form>
-  </section>
-</main>
+    </section>
+
   </main>
 
 
