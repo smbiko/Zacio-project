@@ -127,8 +127,8 @@ nav {
 
 /* Main Content */
 main {
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
+  /* Make main element take up any surplus space to push footer down */
+  flex: 1 0 auto;
   /* Add margin at the top to prevent content from being covered by the header */
   margin-top: 47px;
 
@@ -340,6 +340,7 @@ p {
   padding-block: 100px;
 
 }
+
 #team-section hr {
   width: 80%;
 
@@ -363,7 +364,81 @@ p {
 .team-member-card-header {
   text-align: center;
 }
+
 /* Events page */
+
+#event-section {
+  width: 90%;
+  margin: 20px auto;
+
+}
+
+.heading-1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 180%;
+}
+
+p {
+  text-align: center;
+  font-size: 100%;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+#event-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.event-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.event-card {
+  background: #E1D6CC;
+  border-radius: 10px;
+  max-width: 200px;
+  height: 520px;
+  overflow: hidden;
+}
+
+.event-card-header {
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+.event-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.event-card-subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -1px;
+
+}
+
+.event-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-card-text {
+  padding: 20px;
+  text-align: center;
+}
+
 
 #events {
   background-image: url("../images/Background.webp");
@@ -373,6 +448,29 @@ p {
   flex-grow: 1;
 }
 
+.buy-tickets-btn {
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  font-size: 16px;
+  /* Adjust font size as needed */
+  background-color: #548086;
+  /* Button background color */
+  color: #fff;
+  /* Button text color */
+  border: none;
+  /* Remove button border */
+  border-radius: 5px;
+  /* Apply border radius for rounded corners */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
+.buy-tickets-btn:hover {
+  background-color: #0056b3;
+  /* Button background color on hover */
+}
+
+
 
 /* Gallery page */
 #photos img {
@@ -380,8 +478,8 @@ p {
   height: auto;
   display: block;
 
-  
-  
+
+
 }
 
 #photos {
@@ -436,7 +534,7 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin-right: 10px;
 }
 
@@ -475,8 +573,8 @@ footer {
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
   #photos {
-      column-count: 2;
-      column-gap: 0;
+    column-count: 2;
+    column-gap: 0;
   }
 }
 
@@ -552,10 +650,55 @@ footer {
     align-items: center;
   }
 
+  /*Event*/
 
-    /* Gallery */
-    #photos {
-      column-count: 3;
+  .event-card {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 350px;
+
+  }
+
+  .event-card-reversed {
+    flex-direction: row-reverse;
+  }
+
+
+  .event-card-img {
+    width: 60%;
+    height: 100%;
+  }
+
+  .event-card-header {
+    margin-bottom: 20px;
+    align-items: center;
+
+  }
+
+  .event-card-text {
+    padding: 30px;
+    align-items: center;
+  }
+
+
+  .event-card-text {
+    position: relative;
+    max-width: calc(100% - 20px);
+
+  }
+
+  .buy-tickets-btn {
+    position: center;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 20px;
+  }
+
+
+  /* Gallery */
+  #photos {
+    column-count: 3;
   }
 }
 
@@ -570,35 +713,41 @@ footer {
   .portfolio-card-img {
     width: 50%;
   }
-   /* Gallery */
-   #photos {
+
+  /* Event */
+  .event-card-img {
+    width: 50%;
+  }
+
+  /* Gallery */
+  #photos {
     column-count: 4;
+  }
+
+  /* Form */
+  #signup {
+    background-position: center;
+    position: relative;
+  }
+
+  #signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+  }
+
+  .text-input:hover {
+    border-color: #f16c6b;
+  }
+
+  .join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+  }
 }
 
-/* Form */
-#signup {
-  background-position: center;
-  position: relative;
-}
-
-#signup-form {
-  max-width: 400px;
-  position: absolute;
-  left: 10%;
-  top: 150px;
-}
-
-.text-input:hover {
-  border-color: #f16c6b;
-}
-
-.join-button:hover {
-  background-color: #fafafa;
-  color: #454b1b;
-}
-}
-
-@media screen and (min-width: 1200px) {    
+@media screen and (min-width: 1200px) {
   /* Reasons section */
 
 }
