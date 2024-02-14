@@ -160,7 +160,7 @@ main {
   color: #E1E2E4;
 }
 
-/* Reasons section */
+/* About us and Services section */
 #aboutUs {
   width: 90%;
   margin: 20px auto;
@@ -176,6 +176,63 @@ main {
   text-align: center;
   font-size: 100%;
 
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+
+
+#services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding-block: 100px;
+}
+
+.service-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: #ededed;
+  padding-block: 50px;
+  padding-inline: 20px;
+  max-width: 330px;
+  border-radius: 10px;
+}
+
+.service-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.service-card hr {
+  background-color: #3a3a3a;
+  height: 1px;
+  border: 30%;
+  width: 80%;
+  border-radius: 10px;
 }
 
 
@@ -374,6 +431,8 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-right: 10px;
 }
 
 .join-button {
@@ -536,3 +595,5 @@ footer {
 
 @media screen and (min-width: 1200px) {    
   /* Reasons section */
+
+}
