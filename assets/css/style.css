@@ -141,7 +141,24 @@ nav {
   font-size: 2rem;
 }
 
+.cta-button {
+  border: 2px solid #555454;
+  background: #555454;
+  color: #ededed;
+  display: inline-block;
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  font-weight: bold;
+}
+.cta-button:hover {
+  background: #ededed;
+  color: #555454;
+}
 
+.nav-button.cta-button {
+  margin: .5rem 0 2rem 0;
+}
 
 .nav-link:hover,
 .nav-link.active {
