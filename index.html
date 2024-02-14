@@ -7,6 +7,7 @@
   <meta name="description"
     content="Zacio. Brand Agency for events in Dublin Ireland providing brand solutions to the Diaspora with the use of technology and creative ideas ">
   <meta name="keywords" content="Zacio, creative agency, branding, design, event management, diaspora lifestyle">
+
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!--Title -->
@@ -19,35 +20,36 @@
 </head>
 
 <body>
-  <!--Header-->
   <header>
-
-    <img class="logo" src="assets/icons/zacio_logo_no_tag_gold-01.png" alt="Zacio Logo">
+    <a href="index.html" class="header-logo" aria-label="link to Homepage">
+      <img class="logo" src="assets/icons/zacio_logo_no_tag_gold-01.png" alt="Zacio Logo">
+    </a>
 
 
     <!-- Navigation -->
     <input type="checkbox" id="nav-toggle" name="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label">
-      <i class="fa-solid fa-bars"></i>
-    </label>
+    
 
 
     <nav>
       <ul id="menu">
         <li>
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html" class="nav-button nav-link active" aria-label="link to our home page">Home</a>
         </li>
         <li>
-          <a href="events.html">Events</a>
+          <a href="events.html" class="nav-button nav-link" aria-label="link to event page">Events</a>
         </li>
         <li>
-          <a href="gallery.html">Gallery</a>
+          <a href="gallery.html" class="nav-button nav-link" aria-label="link to gallery page">Gallery</a>
         </li>
         <li>
-          <a href="contactus.html">Contact Us</a>
+          <a href="contactus.html" class="nav-button nav-link" aria-label="link to signup">Contact Us</a>
         </li>
       </ul>
     </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <i class="fa-solid fa-bars"></i>
+    </label>
   </header>
 
 
@@ -60,62 +62,65 @@
       </div>
     </section>
     <section id="aboutUs" class="section">
-      <div class="section-header">
-      <h2>what we do </h2>
-      <hr>
+      <div class="aboutUs-section-header">
+        <h2>what we do </h2>
+        <br>
+        <p>Zacio is more than just an event management agency; we're the bridge between innovation and unforgettable
+          experiences. We specialize in crafting cutting-edge events that leverage the power of technology to captivate
+          audiences and achieve your brand goals.
+        </p>
+      </div>
       <br>
-      <p>Zacio is more than just an event management agency; we're the bridge between innovation and unforgettable
-        experiences. We specialize in crafting cutting-edge events that leverage the power of technology to captivate
-        audiences and achieve your brand goals.
-      </p>
-    </div>
-    <br>
-    
-    <div class="service-card-container">
-      <div class="service-card">
-        <div class="service-card-header">
-          <!--i class="fa-solid fa-microchip"></i-->
-          <h3 class="heading-2">Tech-Savvy Expertise</h3>
-          
+
+      <div class="service-card-container">
+        <div class="service-card">
+          <div class="service-card-header">
+            <!--i class="fa-solid fa-microchip"></i-->
+            <h3 class="heading-2">Tech-Savvy Expertise</h3>
+
+          </div>
+          <div class="service-card-body">
+            <p>
+              Our team isn't just event-savvy, we're tech-obsessed. We understand the latest advancements and how to
+              seamlessly integrate them into your event, from virtual reality activations to interactive data walls.
+            </p>
+          </div>
         </div>
-        <div class="service-card-body">
-          <p>
-            Our team isn't just event-savvy, we're tech-obsessed. We understand the latest advancements and how to seamlessly integrate them into your event, from virtual reality activations to interactive data walls.
-          </p>
+        <div class="service-card">
+          <div class="service-card-header">
+            <!--i class="fa-solid fa-book-open-reader"></i-->
+            <h3 class="heading-2">Storytelling Through Technology</h3>
+
+          </div>
+          <div class="service-card-body">
+            <p>
+              We don't just use technology for its own sake; we use it to tell your brand story in a powerful and
+              engaging way. Our creative minds and technical know-how combine to create unforgettable experiences that
+              resonate with your audience.
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card-header">
+            <!--i class="fa-solid fa-database"></i-->
+            <h3 class="heading-2">Data-Driven Decisions:</h3>
+
+          </div>
+          <div class="service-card-body">
+            <p>
+              We're not just guessing; we use real-time data and analytics to measure the success of your event and
+              optimize every aspect for maximum impact.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="service-card">
-        <div class="service-card-header">
-          <!--i class="fa-solid fa-book-open-reader"></i-->
-          <h3 class="heading-2">Storytelling Through Technology</h3>
-          
-        </div>
-        <div class="service-card-body">
-          <p>
-            We don't just use technology for its own sake; we use it to tell your brand story in a powerful and engaging way. Our creative minds and technical know-how combine to create unforgettable experiences that resonate with your audience.
-          </p>
-        </div>
-      </div>
-      <div class="service-card">
-        <div class="service-card-header">
-          <!--i class="fa-solid fa-database"></i-->
-          <h3 class="heading-2">Data-Driven Decisions:</h3>
-          
-        </div>
-        <div class="service-card-body">
-          <p>
-            We're not just guessing; we use real-time data and analytics to measure the success of your event and optimize every aspect for maximum impact.
-          </p>
-        </div>
-      </div>
-    </div>
     </section>
 
-    
+
 
     <!-- Portfolio Section -->
     <section id="portfolio-section" class="section">
-      <div class="section-header">
+      <div class="porfolio-section-header">
         <hr>
         <br>
         <h2 class="heading-1">Our Flagship Events</h2>
@@ -150,7 +155,9 @@
               </h4>
             </div>
             <p>
-              Immerse yourself in the heart of Dublin with Emerald Grooves, a brand new lifestyle event pulsating with music, movement, and Irish magic. Step into a vibrant scene where contemporary vibes blend seamlessly with the city's rich heritage.
+              Immerse yourself in the heart of Dublin with Emerald Grooves, a brand new lifestyle event pulsating with
+              music, movement, and Irish magic. Step into a vibrant scene where contemporary vibes blend seamlessly with
+              the city's rich heritage.
             </p>
           </div>
         </div>
@@ -163,7 +170,9 @@
               <h4 class="portfolio-card-subtitle">Suit Up for Black Excellence</h4>
             </div>
             <p>
-              Embrace the vibrant creativity and diversity of the black diaspora. Guests suit up in attire reflecting their cultural heritage, creating a tapestry of global style. The event features music, dance performances, and food from different regions, showcasing the richness of black culture.
+              Embrace the vibrant creativity and diversity of the black diaspora. Guests suit up in attire reflecting
+              their cultural heritage, creating a tapestry of global style. The event features music, dance
+              performances, and food from different regions, showcasing the richness of black culture.
             </p>
           </div>
         </div>
@@ -173,7 +182,7 @@
     <!--Team Section-->
 
     <section id="team-section" class="section">
-      <div class="section-header">
+      <div class="team-section-header">
         <hr>
         <br>
         <h2 class="heading-1">Meet The Team</h2>
@@ -194,7 +203,10 @@
           </div>
           <hr />
           <p>
-            Boardroom to beats, Siya redefines boss moves. Leading Zacio with visionary fire, she transforms by night, weaving magic with private school amapiano and deepsoulful house. Her sets ignite dance floors, captivating with an uncanny ability to read any room. This CEO, DJ, and creative force proves passion thrives in duality, inspiring us to chase dreams with heart and hustle.
+            Boardroom to beats, Siya redefines boss moves. Leading Zacio with visionary fire, she transforms by night,
+            weaving magic with private school amapiano and deepsoulful house. Her sets ignite dance floors, captivating
+            with an uncanny ability to read any room. This CEO, DJ, and creative force proves passion thrives in
+            duality, inspiring us to chase dreams with heart and hustle.
           </p>
         </div>
 
@@ -216,7 +228,8 @@
         </div>
 
         <div class="team-member-card">
-          <img class="team-card-img" src="assets/images/team/Koketso.webp" alt="Profile picture of Koketso, Soulful House Dj" />
+          <img class="team-card-img" src="assets/images/team/Koketso.webp"
+            alt="Profile picture of Koketso, Soulful House Dj" />
           <div class="team-member-card-header">
             <h2 class="heading-2">Koketso aka K.K.</h2>
             <h3 class="subheading">Resident Dj</h3>
@@ -256,8 +269,10 @@
           </div>
           <hr />
           <p>
-            Born and raised in South Africa but now currently residing in Dublin. Leb-Zars unique sound shines through in the way he curates his set from Disco/Soul/House/Broken Beat/Amapiano and Afro- Tech.
-            His diverse nusic knowledge and taste always seeks to connect with his audience for a musical journey when his on the decks.
+            Born and raised in South Africa but now currently residing in Dublin. Leb-Zars unique sound shines through
+            in the way he curates his set from Disco/Soul/House/Broken Beat/Amapiano and Afro- Tech.
+            His diverse nusic knowledge and taste always seeks to connect with his audience for a musical journey when
+            his on the decks.
           </p>
         </div>
 
@@ -285,7 +300,10 @@
           </div>
           <hr />
           <p>
-            A Congolese & South African-Irish native. I am a music enthusiast who discovered my passion for DJing in 2021. Making my breakthrough in 2022, I've embraced a multi-genre approach, with R&B, trap, and Afro house resonating as my favorites. Proudly partnering with Pirate Studio, I host DJ workshops, sharing the beats that fuel my journey.
+            A Congolese & South African-Irish native. I am a music enthusiast who discovered my passion for DJing in
+            2021. Making my breakthrough in 2022, I've embraced a multi-genre approach, with R&B, trap, and Afro house
+            resonating as my favorites. Proudly partnering with Pirate Studio, I host DJ workshops, sharing the beats
+            that fuel my journey.
         </div>
 
     </section>

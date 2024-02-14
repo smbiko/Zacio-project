@@ -44,25 +44,9 @@ hr {
 
 }
 
-/* Header */
-header {
-  background-color: #212121;
-  padding: 0 0.5rem;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+img {
+  max-width: 100%;
 }
-
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
 
 /* Logo */
 
@@ -76,6 +60,31 @@ header a {
   min-height: 25px;
   min-width: 95px;
 }
+
+/* Header */
+
+
+header {
+  background-color: #212121;
+  padding: 0 0.5rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
 
 
 
@@ -109,11 +118,19 @@ nav {
   box-shadow: 0 2px 2px #3a3a3a;
   display: none;
   top: 100%;
+  transition: opacity 150ms ease-in-out;
 }
+
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
   display: block;
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 #nav-toggle {
@@ -123,6 +140,14 @@ nav {
 .nav-toggle-label {
   font-size: 2rem;
 }
+
+
+
+.nav-link:hover,
+.nav-link.active {
+    color: #A06040;
+}
+
 
 
 /* Main Content */
@@ -164,6 +189,9 @@ main {
 #aboutUs {
   width: 90%;
   margin: 20px auto;
+  text-align: center;
+  align-items: center;
+
 }
 
 #aboutUs h2 {
@@ -499,6 +527,7 @@ main {
   flex-direction: column;
 }
 
+
 /* Form */
 #signup {
   background-image: url("../images/Signup.webp");
@@ -576,6 +605,23 @@ footer {
     column-count: 2;
     column-gap: 0;
   }
+
+  #aboutUs {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    max-width: 700px;
+  }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -609,9 +655,13 @@ footer {
   }
 
   /* Main content */
-  main {
-    /* Push main content down to accommodate larger header */
-    margin-top: 79px;
+
+  #aboutUs {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+
   }
 
   /* Hero image */
