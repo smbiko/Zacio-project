@@ -1,10 +1,13 @@
 /* Google Fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Sans+3:wght@400;700&display=swap");
 
+:root {
+  --background:rgba(33, 33, 33, 1);
+}
 
 
 /* Asterisk wildcard selector to override default styles added by the browser */
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -28,7 +31,176 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #212121;
+  color: white;
+}
+
+
+
+img {
+  max-width: 100%;
+}
+
+/* Logo */
+
+
+
+
+/* Header */
+
+
+header {
+  background: var(--background);
+  padding: 0 0.5rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0
+}
+
+
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 1em;
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #A06040;
+  height:2px;
+  width: 2em;
+  border-radius: 2px ;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+.nav-toggle-label span::after{
+  top: 7px
+}
+
+
+nav {
+  position: absolute;
+  background: var(--background);
+  text-align: left;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  top: 100%;
+  transform: scale(1, 0);
+  transform: top;
+  transition: opacity 400ms ease-in-out;
+  
+}
+
+nav ul {
+  font-size: 110%;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.5px;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: #7C756B;
+  text-decoration: none;
+
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: opacity 150ms ease-in-out ;
+  opacity: 0;
+}
+
+nav a:hover {
+  color: #A06040;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+
+
+
+
+
+
+.cta-button {
+  border: 2px solid #555454;
+  background: #555454;
+  color: #ededed;
+  display: inline-block;
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #ededed;
+  color: #555454;
+}
+
+.nav-button.cta-button {
+  margin: .5rem 0 2rem 0;
+}
+
+
+.nav-link.active {
+  color: #A06040;
+}
+
+
+
+/* Main Content */
+main {
+  /* Make main element take up any surplus space to push footer down */
+  flex: 1 0 auto;
+  /* Add margin at the top to prevent content from being covered by the header */
+  margin-top: 47px;
+
 }
 
 hr {
@@ -43,140 +215,6 @@ hr {
   border-width: 1px;
 
 }
-
-img {
-  max-width: 100%;
-}
-
-/* Logo */
-
-
-.logo {
-  cursor: pointer;
-  margin-right: 0;
-  width: 50%;
-  max-width: 200px;
-  max-height: 90px;
-  min-height: 25px;
-  min-width: 95px;
-}
-
-/* Header */
-
-
-header {
-  background-color: #212121;
-  padding: 0 0.5rem;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0
-}
-
-header a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
-
-
-
-
-
-
-/* Menu */
-#menu {
-  font-size: 110%;
-  letter-spacing: 1.5px;
-  list-style-type: none;
-  font-weight: 400;
-  font-size: 16px;
-  color: #7C756B;
-  text-decoration: none;
-}
-
-#menu>li {
-  margin-bottom: 1rem;
-}
-
-.active {
-  border-bottom: 1px solid #3a3a3a;
-}
-
-/* Navbar styles with dropdown toggle */
-nav {
-  position: absolute;
-  background-color: #212121;
-  width: 100%;
-  left: 0;
-  padding: 0 1rem;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display: none;
-  top: 100%;
-  transition: opacity 150ms ease-in-out;
-}
-
-
-/* Nav toggle */
-#nav-toggle:checked~nav {
-  display: block;
-}
-
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-#nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  font-size: 2rem;
-}
-
-.cta-button {
-  border: 2px solid #555454;
-  background: #555454;
-  color: #ededed;
-  display: inline-block;
-  border-radius: 2rem;
-  text-decoration: none;
-  padding: 0.6rem 2rem;
-  font-weight: bold;
-}
-.cta-button:hover {
-  background: #ededed;
-  color: #555454;
-}
-
-.nav-button.cta-button {
-  margin: .5rem 0 2rem 0;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: #A06040;
-}
-
-
-
-/* Main Content */
-main {
-  /* Make main element take up any surplus space to push footer down */
-  flex: 1 0 auto;
-  /* Add margin at the top to prevent content from being covered by the header */
-  margin-top: 47px;
-
-}
-
-
 
 /* Hero section */
 #hero {
@@ -618,9 +656,45 @@ footer {
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
+ 
+  .nav-toggle-label {
+    display: none;
+  }
+
   #photos {
     column-count: 2;
     column-gap: 0;
+  }
+ 
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(576px, 3fr) 1fr;
+  }
+  .logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    all:unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul {
+    display:flex;
+    
+  }
+
+  nav li{
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a {
+    opacity: 1;
   }
 
   #aboutUs {
@@ -644,6 +718,11 @@ footer {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+  }
+
   /* Header */
   nav {
     display: block;
@@ -652,23 +731,15 @@ footer {
     width: fit-content;
     padding-right: 1rem;
   }
-
-  #menu {
-    display: flex;
-  }
-
-  #menu>li {
-    padding-left: 1rem;
-  }
-
   .nav-toggle-label {
     display: none;
   }
 
-  #logo {
+  .logo {
     font-size: 280%;
     line-height: 75px;
     margin: 0 0.5rem;
+    grid-column: 2 / 3;
   }
 
   /* Main content */
@@ -678,6 +749,7 @@ footer {
     margin: 20px auto;
     text-align: center;
     align-items: center;
+    
 
   }
 
@@ -773,9 +845,7 @@ footer {
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-  #menu a:hover {
-    border-bottom: 1px solid #212121;
-  }
+  
 
   .portfolio-card-img {
     width: 50%;
