@@ -496,7 +496,7 @@ p {
 .event-card {
   background: #E1D6CC;
   border-radius: 10px;
-  max-width: 200px;
+  max-width: 250px;
   height: 520px;
   overflow: hidden;
 }
@@ -605,7 +605,7 @@ main {
   color: #ffffff;
   background-color: rgba(60, 60, 60, 0.6);
   padding: 30px;
-  margin-top: 20px;
+  margin-top: 20%;
 }
 
 #signup-form>h2 {
