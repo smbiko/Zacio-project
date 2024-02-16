@@ -77,14 +77,15 @@ header {
 
 .nav-toggle {
   display: none;
+  margin-inline: auto;
 }
 
 .nav-toggle-label {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 0;
   right: 0;
-  margin-left: 1em;
+  margin-right: 1em;
   height:100%;
   display:flex;
   align-items: center;
@@ -93,12 +94,13 @@ header {
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  display: block;
+  
   background: #A06040;
   height:2px;
-  width: 2em;
-  border-radius: 5px ;
+  width: 1em;
+  border-radius: 10px ;
   position: relative;
+  left: 0px;
 }
 
 .nav-toggle-label span::before,
@@ -172,11 +174,6 @@ nav a:hover {
 .active {
   border-bottom: 2px solid #A06040;
 }
-
-
-
-
-
 
 
 .cta-button {
