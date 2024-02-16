@@ -605,7 +605,7 @@ main {
   color: #ffffff;
   background-color: rgba(60, 60, 60, 0.6);
   padding: 30px;
-  margin-top: 20%;
+  margin-top: 5%;
 }
 
 #signup-form>h2 {
@@ -640,8 +640,6 @@ main {
   background-color: #454b1b;
   color: #fafafa;
 }
-
-
 
 
 
