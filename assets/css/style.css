@@ -41,14 +41,18 @@ img {
 }
 
 /* Logo */
+
+
+
+/* Header Styles*/
+
 .logo img {
   height: 6rem;
 }
 
 
-
-/* Header */
-
+/* mobile hamburger menu*/
+/* start of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 
 header {
   background: var(--background);
@@ -61,6 +65,12 @@ header {
   justify-content: space-between;
   align-items: center;
   top: 0
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 
@@ -157,10 +167,10 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-
+/* end of code adapted from Kevin Powell https://codepen.io/kevinpowell/pen/jxppmr */
 
 .active {
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 2px solid #A06040;
 }
 
 
@@ -170,11 +180,11 @@ nav a:hover {
 
 
 .cta-button {
-  border: 2px solid #555454;
+  border: 1px solid #555454;
   background: #555454;
   color: #ededed;
   display: inline-block;
-  border-radius: 2rem;
+  border-radius: 1rem;
   text-decoration: none;
   padding: 0.6rem 2rem;
   font-weight: bold;
