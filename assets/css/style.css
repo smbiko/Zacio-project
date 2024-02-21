@@ -31,7 +31,7 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #212121;
+  color: var(--background);
 }
 
 
@@ -40,11 +40,10 @@ img {
   max-width: 100%;
 }
 
-/* Logo */
-
-
 
 /* Header Styles*/
+
+
 
 .logo img {
   height: 6rem;
