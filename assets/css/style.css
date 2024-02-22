@@ -1013,7 +1013,7 @@ footer {
 /* ----------------*/
 
 .page-404-content {
-  background: url("../assets/images/404 image.jpg") center/cover
+  background: url("../images/404 image.jpg") center/cover
     no-repeat;
   height: 100vh;
   display: flex;
@@ -1029,5 +1029,27 @@ footer {
 }
 
 .page-404-content .btn {
-  box-shadow: rgba(60, 60, 60, 0.6);
+  box-shadow: #fafafa;
+}
+.page-404-content .heading-1 {
+  color:#fafafa
+}
+.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding-block: 10px;
+  padding-inline: 40px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.btn-regular {
+  background-color:#A06040 ;
+}
+.btn-regular:hover {
+  background-color: #555454;
+}
+.page-404-content a {
+  color: #212121;
+  text-decoration: none;
 }
