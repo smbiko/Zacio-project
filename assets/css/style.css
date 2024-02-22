@@ -1007,3 +1007,27 @@ footer {
   /* Reasons section */
 
 }
+
+/* ----------------*/
+/* 404 Page        */
+/* ----------------*/
+
+.page-404-content {
+  background: url("assets/images/404 image.jpg") center/cover
+    no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.page-404-content .section-header {
+  color: #fafafa;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.page-404-content .btn {
+  box-shadow: rgba(50, 50, 93, 0.25);
+}
