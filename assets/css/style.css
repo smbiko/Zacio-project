@@ -1013,7 +1013,7 @@ footer {
 /* ----------------*/
 
 .page-404-content {
-  background: url("assets/images/404 image.jpg") center/cover
+  background: url("../assets/images/404 image.jpg") center/cover
     no-repeat;
   height: 100vh;
   display: flex;
@@ -1029,5 +1029,5 @@ footer {
 }
 
 .page-404-content .btn {
-  box-shadow: rgba(50, 50, 93, 0.25);
+  box-shadow: rgba(60, 60, 60, 0.6);
 }
