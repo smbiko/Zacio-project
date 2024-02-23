@@ -124,9 +124,7 @@ nav {
   padding: 0 1rem;
   top: 100%;
   transform: scale(1, 0);
-  transform: top;
   transition: opacity 400ms ease-in-out;
-  
 }
 
 nav ul {
@@ -139,7 +137,6 @@ nav ul {
   font-size: 16px;
   color: #7C756B;
   text-decoration: none;
-
 }
 
 nav li {
@@ -221,7 +218,6 @@ hr {
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
-
 }
 
 /* Hero section */
@@ -254,7 +250,6 @@ hr {
   margin: 20px auto;
   text-align: center;
   align-items: center;
-
 }
 
 #aboutUs h2 {
@@ -266,7 +261,6 @@ hr {
 #aboutUs p {
   text-align: center;
   font-size: 100%;
-
 }
 
 .section-header {
@@ -321,7 +315,6 @@ hr {
 .service-card hr {
   background-color: #3a3a3a;
   height: 1px;
-  border: 30%;
   width: 80%;
   border-radius: 10px;
 }
@@ -899,7 +892,6 @@ footer {
   }
 
   .buy-tickets-btn {
-    position: center;
     bottom: 10px;
     right: 10px;
     margin-top: 20px;
@@ -1028,9 +1020,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.page-404-content .btn {
-  box-shadow: #fafafa;
-}
+
 .page-404-content .heading-1 {
   color:#fafafa
 }
