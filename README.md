@@ -83,7 +83,7 @@ I have chosen a nice shade of Gold as the primary color of the brand and complem
 
 To create the color scheme I pictured a high class event and found that gold and silver was used quite alot to elavate the eligence . I quickly decided to go for gold as my main color and picked **#A06040** to be one of my main colors. Then I used http://colormind.io/to find matching colors for my scheme. After picking out my five main colors I used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%2383a603%0D%0A%231b4001%0D%0A%23f0deb4%0D%0A%23f6f7eb%0D%0A%23001e1d&es-color-form__tile-size=regular&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
 
-![Color contrast](docs/wireframe/screenshot/markupscreen.png)
+![Color contrast](docs/wireframe/screenshot/colorscheme.png)
 
 
 ### **Fonts**
