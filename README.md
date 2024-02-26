@@ -164,7 +164,7 @@ The footer includes the the Facebook Youtube ,TikTok , X previously know as Twit
 
 - Immerse yourself in a stunning visual showcase of captivating images that highlight the essence and aesthetic of Zacio
 
-![Gallery page on Mobile](docs/wireframe/screenshot/mobileevent.png)
+![Gallery page on Mobile](docs/wireframe/screenshot/mobilegallery.png)
 
 - Enjoy a seamless browsing experience on any device with responsive design, optimizing the event page layout for desktops, tablets, and smartphones.
 
