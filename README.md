@@ -205,12 +205,12 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 1. Getting a better performance on Lighthouse testing.
     - When I first ran the Lighthouse test my values for Perfomance *was at 69*.
         
-        ![Screenshot 2024-02-23 at 13.32.13.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aad7120a-3691-4299-b873-e6ee0a18a270/bf1be5d8-8912-4afe-9ebe-169973b7cead/Screenshot_2024-02-23_at_13.32.13.png)
+        ![Lighthouse ](docs/wireframe/Testing/lighthouse.png)
         
     
     - First I tried compressing the images again, but that did not change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from [Iloveimg](https://www.iloveimg.com/) in their original size I was able to really size down my images this way.
         
-        ![Screenshot 2024-02-27 at 15.08.36.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aad7120a-3691-4299-b873-e6ee0a18a270/0cb64ced-b0ba-49a6-93c9-ad8cf1d7172e/Screenshot_2024-02-27_at_15.08.36.png)
+        ![LCP Screenshot Improved](docs/wireframe/Testing/improvedlcp.png)
         
 
 ### **Validation**
