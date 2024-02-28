@@ -227,10 +227,10 @@ I then renamed the images and most of the errors were rectified .
 
 The full validation results can be found here:
 
-- [index.html](docs/wireframe/Testing/HTML Index page.pdf)
-- [events.html](docs/wireframe/Testing/HTML validator - events page.pdf)
-- [gallery.html](docs/wireframe/Testing/HTML validator gallerypage.pdf)
-- [signup.html](docs/wireframe/Testing/HTML validator signup.pdf)
+- [index.html] (docs/wireframe/Testing/htmlindexpage.pdf)
+- [events.html](docs/wireframe/Testing/htmlvalidatoreventspage.pdf)
+- [gallery.html](docs/wireframe/Testing/htmlvalidatorgallerypage.pdf)
+- [signup.html](docs/wireframe/Testing/htmlvalidatorsignup.pdf)
 - [404.html](docs/wireframe/Testing/htmlchecker404.pdf)
 
 ### **CSS**
