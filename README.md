@@ -227,7 +227,7 @@ I then renamed the images and most of the errors were rectified .
 
 The full validation results can be found here:
 
-- [index.html] (docs/wireframe/Testing/htmlindexpage.pdf)
+- [index.html](docs/wireframe/Testing/htmlindexpage.pdf)
 - [events.html](docs/wireframe/Testing/htmlvalidatoreventspage.pdf)
 - [gallery.html](docs/wireframe/Testing/htmlvalidatorgallerypage.pdf)
 - [signup.html](docs/wireframe/Testing/htmlvalidatorsignup.pdf)
