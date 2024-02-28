@@ -236,7 +236,7 @@ The full validation results can be found here:
 ### **CSS**
 
 I used the [Jigsaw CSS Validator] to validate my CSS. The validation came back with no errors or warnings. I validated the CSS by direct input and had a warning saying that some parts of the CSS can only be validated by URI. Imported style sheets are not checked in direct input and file upload modes
-![CSS Validator](docs/wireframe/Testing/w3ccssvalidatorresults.pdf)
+![CSS Validator](docs/wireframe/Testing/cssvalidator.png)
 
 The full validation result can be found here.
 
