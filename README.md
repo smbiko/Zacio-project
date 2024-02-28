@@ -184,9 +184,109 @@ I added a custom 404 page to direct the user to a customized error page that is 
 
 ## **Future Enhancements**
 
-I believe I added all the necessary features to create a minimum viable product that is ready to be used as a real-life website. However, there is room for improvement and further features. Here are some enhancements I would like to make in the future and to adapt this project for a real-world shelter.
+I believe I added all the necessary features to create a minimum viable product that is ready to be used as a real-life website. However, there is room for improvement and further features. Here are some enhancements I would like to make in the future and to adapt this project for a real-world..
 
 - The form on the sign up  uses a `POST`  parameter at the moment to simulate submitting the form. The form data would be sent to a database.
 - I would fully build out an internal payment work flow instead of relying on Eventbrite to take these funds as they delay in payout .
 - Will be adding 4d video recordings of the event
 
+## **Testing**
+
+### **Manual Testing**
+
+I deployed the first version of my project after finishing the first iteration of the MVP. From this moment on I made sure to always test my live website. While implementing new features I had the website open in **Google Chrome**, resizing the browser using *Dev Tools*. I also opened the website on my phone and tablet after pushing new features. I think you get a better feeling for the mobile version of a website when opening it on a real phone, instead of a smaller browser window. Furthermore, I have **Microsoft Edge** and **Firefox** installed and made sure to open my deployed website there frequently.
+
+I used the *#peer-code-review* channel on Code Institute´s Slack to get some feedback from other students. Got some good feedback on how to try improve the LCP which was the most challenging thing to bring up using the tool to compress the image.
+
+### **Issues**
+
+While coding some issues kept me thinking for longer than others. Below is a list of issues that took me a while to fix.
+
+1. Getting a better performance on Lighthouse testing.
+    - When I first ran the Lighthouse test my values for Perfomance *was at 69*.
+        
+        ![Screenshot 2024-02-23 at 13.32.13.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aad7120a-3691-4299-b873-e6ee0a18a270/bf1be5d8-8912-4afe-9ebe-169973b7cead/Screenshot_2024-02-23_at_13.32.13.png)
+        
+    
+    - First I tried compressing the images again, but that did not change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from [Iloveimg](https://www.iloveimg.com/) in their original size I was able to really size down my images this way.
+        
+        ![Screenshot 2024-02-27 at 15.08.36.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/aad7120a-3691-4299-b873-e6ee0a18a270/0cb64ced-b0ba-49a6-93c9-ad8cf1d7172e/Screenshot_2024-02-27_at_15.08.36.png)
+        
+
+### **Validation**
+
+### **HTML**
+
+I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my HTML. I originally had some warnings because I had a spaces in between my image titles.
+
+![W3C Index HTML](docs/wireframe/Testing/w3cindexhtml.png)
+
+I then renamed the images and most of the errors were rectified . 
+
+![W3c After Corrections](docs/wireframe/Testing/w3caftercorrection.png)
+
+The full validation results can be found here:
+
+- index.html(docs/wireframe/Testing/HTML Index page.pdf)
+- events.html(docs/wireframe/Testing/HTML validator - events page.pdf)
+- gallery.html(docs/wireframe/Testing/HTML validator gallerypage.pdf)
+- signup.html(docs/wireframe/Testing/HTML validator signup.pdf)
+- 404.html(docs/wireframe/Testing/htmlchecker404.pdf)
+
+### **CSS**
+
+I used the [Jigsaw CSS Validator] to validate my CSS. The validation came back with no errors or warnings. I validated the CSS by direct input and had a warning saying that some parts of the CSS can only be validated by URI. Imported style sheets are not checked in direct input and file upload modes
+![CSS Validator](docs/wireframe/Testing/w3ccssvalidatorresults.pdf)
+
+The full validation result can be found here.
+
+### **Lighthouse Testing**
+
+As described before in the Issues section, getting the *Performance* score on Lighthouse to a high level was probably the biggest challenge for me in this project.
+
+I followed the recommendations I got in the Lighthouse tab and made some performance improvements that I already described. The score for *Performance* varies between 71 and 100 depending on the page, size and when I run the test.
+
+### **Lighthouse Testing**
+
+As described before in the Issues section, getting the *Performance* score on Lighthouse to a high level was probably the biggest challenge for me in this project.
+
+I followed the recommendations I got in the Lighthouse tab and made some performance improvements that I already described. The score for *Performance* varies between 71 and 100 depending on the page, size and when I run the test. 
+
+### **User Story Testing**
+
+| User Story | Expected Result | Pass |
+| --- | --- | --- |
+| As a user, I want to navigate the website using multiple devices. | The website with all its pages is usable on big monitors, normal laptop screens, tablets and phones using different browsers and devices. | ✓ |
+| As a user, I want to find general information about the events. | Types of events available and how to signup   | ✓ |
+| As a user, I want to find out tickets available and purchase them. | There is a page on the website where all the tickets available for adoption can be found with relevant information about the event. | ✓ |
+| As a user, I want to see pictures of events | Navigating the website there are many pictures of event attendees. | ✓ |
+| As the site owner, I want to have people to sign up for interested events. | It´s ensured that the website user can find the type of events available and to sign up for future events notification | ✓ |
+
+## **Deployment**
+
+I followed my mentor's tip and deployed my website early, after implementing the header. The steps to deploying a website on GitHub pages are:
+
+1. Open the [repository](https://github.com/smbiko/Zacio-project) and go to the **Settings** tab.
+2. Navigate to the **Pages** tab in the left menu.
+3. Choose **Deploy from a branch** and select the according branch, *main* in my case.
+4. Click save. The link to the deployed website can then be found in the [repository](https://github.com/smbiko/Zacio-project) on the right menu under **Environments**.
+
+The link to my live site is: [ZACIO](https://smbiko.github.io/Zacio-project/index.html)
+
+## **Credits**
+
+Thanks to my Code Institute Mentor Jubril Mentor for giving me valuable feedback and tips during this project.
+
+### **Content**
+
+- The content was written by myself and the images on the ZACIO page are from our past events .
+- I adapted my hamburger menu from a video with the according [Codepen](https://codepen.io/kevinpowell/pen/jxppmr) from Kevin Powell.
+
+### **Media and Design**
+
+- The images used for the website are taken from my past events held in 2023 and compressed using [iloveimg](https://www.iloveimg.com/) .
+- [Pixelied](https://pixelied.com/) was used to convert images to the *.webp* format.
+- I used Figma to create Wireframes.
+- With [colormind.io](http://colormind.io/) I created a color scheme and used [contrast-grid.eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23A06040%0D%0A%23212121%0D%0A%23454B1B%0D%0A%23FAFAFA%0D%0A%23EDEDED%0D%0A%23E1E2E4%0D%0A%23E1D6CC%0D%0A%237C756B%0D%0A%23736A63%0D%0A%23555454%0D%0A%233A3A3A%0D%0A%233F3D3D%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to check the contrast and possible color combinations.
+- The fonts were downloaded from Google Fonts.
+- The screenshot at the top of this document was taken from Am I Responsive?.
