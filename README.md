@@ -37,6 +37,20 @@ Through our innovative approach and unwavering dedication, we aim to set new sta
     - [**Gallery Page**](#gallery-page)
     - [**Sign Up Page**](#signup-page)
     - [**Custom 404 Page**](#custom-404-page)
+    - [**Future Enhancements**](#future-enhancements)
+- [**Testing**](#testing)
+    - [**Manual Testing**](#manual-testing)
+    - [**Issues**](#issues)
+    - [**Validation**](#validation)
+        - [**HTML**](#html)
+        - [**CSS**](#css)
+    - [**Lighthouse Testing**](#lighthouse-testing)
+    - [**Accessibility Testing**](#accessibilty-testing)
+    - [**User Story Testing**](#user-story-testing)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+    - [**Content**](#content)
+    - [**Media and Design**](#media-and-design)
 
 ## **Planning**
 
