@@ -89,7 +89,7 @@ Through our innovative approach and unwavering dedication, we aim to set new sta
 
 ### **Wireframes**
 
-I created wireframes to visualize my ideas using [Figma](docs/wireframe/wireframe.png) . As I want to stick to the mobile-first approach I created wireframes for mobile, tablet and desktop screen sizes.
+I created wireframes to visualize my ideas using [Figma](docs/wireframe/wireframe.png) . As I want to stick to the mobile-first approach I created wireframes for mobile.
 
 ### **Color Scheme**
 
