@@ -1016,7 +1016,7 @@ footer {
 /* ----------------*/
 
 .page-404-content {
-  background: url("../images/404 image.jpg") center/cover no-repeat;
+  background: url("../images/404-image.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;

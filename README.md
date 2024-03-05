@@ -108,7 +108,7 @@ I’ve opted to use Montserrat as the main font for the website ,paired with Sou
 
 After choosing my colors and fonts I wanted to make a simple Logo for my website.
 
-![zacio_logo_no_tag_gold-01.png](docs/wireframe/screenshot/zacio_logo_no_tag_gold-01.png)
+![zacio_logo_no_tag_gold-01.png](assets/icons/zacio-logo-no-tag-gold.png)
 
 ## **Features**
 
@@ -219,12 +219,12 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 1. Getting a better performance on Lighthouse testing.
     - When I first ran the Lighthouse test my values for Perfomance *was at 69*.
         
-        ![Lighthouse ](docs/wireframe/Testing/lighthouse.png)
+        ![Lighthouse ](docs/wireframe/testing/lighthouse.png)
         
     
     - First I tried compressing the images again, but that did not change much. Then I converted them to the *.webp* format and changed the image size. As I had downloaded the images from [Iloveimg](https://www.iloveimg.com/) in their original size I was able to really size down my images this way.
         
-        ![LCP Screenshot Improved](docs/wireframe/Testing/improvedlcp.png)
+        ![LCP Screenshot Improved](docs/wireframe/testing/improvedlcp.png)
         
 
 ### **Validation**
@@ -233,24 +233,24 @@ While coding some issues kept me thinking for longer than others. Below is a lis
 
 I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate my HTML. I originally had some warnings because I had a spaces in between my image titles.
 
-![W3C Index HTML](docs/wireframe/Testing/w3cindexhtml.png)
+![W3C Index HTML](docs/wireframe/testing/w3cindexhtml.png)
 
 I then renamed the images and most of the errors were rectified . 
 
-![W3c After Corrections](docs/wireframe/Testing/w3caftercorrection.png)
+![W3c After Corrections](docs/wireframe/testing/w3caftercorrection.png)
 
 The full validation results can be found here:
 
-- [index.html](docs/wireframe/Testing/htmlindexpage.pdf)
-- [events.html](docs/wireframe/Testing/htmlvalidatoreventspage.pdf)
-- [gallery.html](docs/wireframe/Testing/htmlvalidatorgallerypage.pdf)
-- [signup.html](docs/wireframe/Testing/htmlvalidatorsignup.pdf)
-- [404.html](docs/wireframe/Testing/htmlchecker404.pdf)
+- [index.html](docs/wireframe/testing/htmlindexpage.pdf)
+- [events.html](docs/wireframe/testing/htmlvalidatoreventspage.pdf)
+- [gallery.html](docs/wireframe/testing/htmlvalidatorgallerypage.pdf)
+- [signup.html](docs/wireframe/testing/htmlvalidatorsignup.pdf)
+- [404.html](docs/wireframe/testing/htmlchecker404.pdf)
 
 ### **CSS**
 
 I used the [Jigsaw CSS Validator] to validate my CSS. The validation came back with no errors or warnings. I validated the CSS by direct input and had a warning saying that some parts of the CSS can only be validated by URI. Imported style sheets are not checked in direct input and file upload modes
-![CSS Validator](docs/wireframe/Testing/cssvalidator.png)
+![CSS Validator](docs/wireframe/testing/cssvalidator.png)
 
 The full validation result can be found here.
 
