@@ -212,7 +212,7 @@ I deployed the first version of my project after finishing the first iteration o
 
 I used the *#peer-code-review* channel on Code Institute´s Slack to get some feedback from other students. Got some good feedback on how to try improve the LCP which was the most challenging thing to bring up using the tool to compress the image.
 
-## **Devices**
+### **Devices**
 
 Below are the various devices and browsers I tested my website for responsiveness on after it was deployed.
 
@@ -232,7 +232,7 @@ Below are the various devices and browsers I tested my website for responsivenes
 
     ![Samsung Galaxy s20.png](docs/wireframe/testing/samsung-galaxy-s20.png)
 
-## **Browsers**
+### **Browsers**
 
 - Google Chrome
 
@@ -241,6 +241,8 @@ Below are the various devices and browsers I tested my website for responsivenes
 - Safari
     
     ![Safari.png](docs/wireframe/testing/safari.png)
+
+### **NavBar**
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
