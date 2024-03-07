@@ -212,6 +212,53 @@ I deployed the first version of my project after finishing the first iteration o
 
 I used the *#peer-code-review* channel on Code Institute´s Slack to get some feedback from other students. Got some good feedback on how to try improve the LCP which was the most challenging thing to bring up using the tool to compress the image.
 
+## **Devices**
+
+Below are the various devices and browsers I tested my website for responsiveness on after it was deployed.
+
+- 24-inch Desktop Monitor
+
+    ![24 Inch.png](docs/wireframe/testing/24-inch.png)
+
+- iPad Pro
+    
+    ![iPad Pro.png](docs/wireframe/testing/ipad-pro.png)
+    
+- iPhone 12
+
+    ![iPhone 12.png](docs/wireframe/testing/ipad-pro.png)
+
+- Samsung S20
+
+    ![Samsung Galaxy s20.png](docs/wireframe/testing/samsung-galaxy-s20.png)
+
+## **Browsers**
+
+- Google Chrome
+
+    ![Google Chrome.png](docs/wireframe/testing/google-chrome.png)
+
+- Safari
+    
+    ![Safari.png](docs/wireframe/testing/Safari.png)
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Navbar |	Becomes sticky after scrolling past Hero section. |	Scroll past Hero section	|Navbar becomes sticky |	Pass ✅ |
+| Navbar |	Changes to colored background after scrolling past Hero section. |	Scroll past Hero section. |	Navbar changes to correct background color	| Pass ✅|
+| Navbar Hamburger  Icon |	On mobile, elements disappear to reveal hamburger icon in the right coner. |	Resize viewport to mobile width. | Hamburger appears and displays as intended. |	Pass ✅|
+| Navbar Hamburger Icon	| When clicked the Mobile Nav menu dropdown slides into view.|	Click Icon.| Mobile Nav menu dropdown slides into view as intended.	| Pass ✅|
+| Navbar Logo |	Becomes visible when the navbar is sticky at desktop size. |	Make the navbar sticky by scrolling past Hero section on desktop size.|	Navbar logo becomes visible.|	Pass ✅|
+| Navbar Links| Should all be centered over the Hero image at the top of the page.|	Scroll to the top of the page.|	Menu links are displayed as intended.|	Pass ✅|
+| Navbar Links	| Line transition should appear on hover.|	Hover over each navbar link.|	Hover transition plays correctly on hover.|	Pass ✅|
+| Navbar Links	| When the navbar is sticky, menu items should right-align in the navbar.|	Scroll past the hero section.|	Menu links are positioned as intended.|	Pass ✅|
+| Navbar Link - About us |	When clicked, the you will get turned to the About Us page from both mobile and desktop menu.|	Clicked link.|	Correctly smooth scrolled to the services section.|	Pass ✅|
+| Navbar Link - Events |	When clicked, the you will get turned to the events page from both mobile and desktop menu.|	Clicked link.|	Correctly  turned to the events page.|	Pass ✅|
+| Navbar Link - Gallery| When clicked, the you will get turned to the events page from both mobile and desktop menu.|	Clicked link.|	Correctly  turned to the Gallery page.|	Pass ✅|
+| Navbar Link - Sign Up| When clicked, the you will get turned to the events page from both mobile and desktop menu.|	Clicked link.|	Correctly  turned to the Gallery page.|	Pass ✅|
+
+
+
 ### **Issues**
 
 While coding some issues kept me thinking for longer than others. Below is a list of issues that took me a while to fix.
@@ -271,6 +318,7 @@ I followed the recommendations I got in the Lighthouse tab and made some perform
 | User Story | Expected Result | Pass |
 | --- | --- | --- |
 | As a user, I want to navigate the website using multiple devices. | The website with all its pages is usable on big monitors, normal laptop screens, tablets and phones using different browsers and devices. | ✓ |
+| I want to navigate easily and find the content I'm looking for regardless of where I am on the page. | A navigation bar appears on top the hero, allowing quick access to any page .| ✓ |
 | As a user, I want to find general information about the events. | Types of events available and how to signup   | ✓ |
 | As a user, I want to find out tickets available and purchase them. | There is a page on the website where all the tickets available for adoption can be found with relevant information about the event. | ✓ |
 | As a user, I want to see pictures of events | Navigating the website there are many pictures of event attendees. | ✓ |
