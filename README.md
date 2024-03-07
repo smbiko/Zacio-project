@@ -240,7 +240,7 @@ Below are the various devices and browsers I tested my website for responsivenes
 
 - Safari
     
-    ![Safari.png](docs/wireframe/testing/Safari.png)
+    ![Safari.png](docs/wireframe/testing/safari.png)
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
